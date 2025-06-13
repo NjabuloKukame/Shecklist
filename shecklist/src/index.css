@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --soft-neutral-gray: #e4e4ea;
+  --bright-off-white: #fafafa;
+  --light-stone: #c4c6cc;
+  --cool-gray: #d8d9de;
+  --shadow-element: #b4b6ba;
+  --near-white: #f2f2f4;
+
+   --font-family: 'Poppins', sans-serif;
+
+  /* Font Sizes */
+  --font-xxl: 2.3rem;     /* Hero heading */
+  --font-xl: 2rem;      /* Section titles */
+  --font-lg: 1.5rem;    /* Subheadings */
+  --font-md: 1.125rem;  /* Body */
+  --font-sm: 0.95rem;   /* Meta/Label */
+  --font-xs: 0.8rem;    /* Captions */
+
+  /* Font Colors */
+  --color-text-primary: #323232;
+  --color-text-secondary: #6e6e6e;
+  --color-accent: #5868fa;
+  --color-on-glass: #ffffff;
+
+  /* Neumorphism Shadows */
+  --shadow-light: rgba(255, 255, 255, 0.6);
+  --shadow-dark: rgba(0, 0, 0, 0.08);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: var(--soft-neutral-gray); */
+  font-family: var(--font-family);
+  font-size: var(--font-md);
+  color: var(--color-text-primary);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-xxl);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
