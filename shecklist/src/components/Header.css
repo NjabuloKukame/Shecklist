@@ -12,21 +12,31 @@
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 18px;
+  justify-content: center;
+  gap: 20px;
   padding: 0.6rem 1rem;
-  background: #f2f2f4;
   border-radius: 50px;
+  width: fit-content;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15); 
+  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow:
-    8px 8px 16px rgba(0, 0, 0, 0.06),
-    -8px -8px 16px rgba(255, 255, 255, 0.7);
+    -6px -6px 12px rgba(255, 255, 255, 0.6),
+    6px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav:hover {
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.7),
+    6px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .header-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f2f4;
+  background: rgb(242, 242, 244, 0.3);
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -40,15 +50,47 @@
   box-shadow:
     inset 2px 2px 5px rgba(0, 0, 0, 0.1),
     inset -2px -2px 5px rgba(255, 255, 255, 0.6);
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 .header-link svg {
-  color: #333;
+  color: var(--color-text-primary);
   transition: color 0.2s;
 }
 
 .header-link:hover svg {
-  color: var(--color-text-secondary); /* Accent color */
+  color: var(--shadow-element); 
+}
+
+.icon-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-label {
+  position: absolute;
+  bottom: -35px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-text-primary);
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.05),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.icon-container:hover .icon-label {
+  opacity: 1;
+  transform: translateY(0);
 }
 

@@ -38,6 +38,7 @@
 
 body {
   /* background-color: var(--soft-neutral-gray); */
+  background: linear-gradient(135deg, #dbe0e7, #f0f3f7);
   font-family: var(--font-family);
   font-size: var(--font-md);
   color: var(--color-text-primary);
