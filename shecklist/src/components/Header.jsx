@@ -1,11 +1,11 @@
 import { useDarkMode } from "./DarkMode";
 import "./Header.css";
 import { Link } from "react-router";
-import { BoomBox, SunDim, Search, User, House } from "lucide-react";
+import { BoomBox, SunDim, Search, User, House, SunMoon } from "lucide-react";
 
 function Header() {
-  const { darkMode } = useDarkMode();
-
+  const { darkMode, setDarkMode } = useDarkMode();
+  
   return (
     <header className="header">
       <h1 className="header-logo">SHECKLIST</h1>
@@ -39,10 +39,22 @@ function Header() {
           <span className="icon-label">Login/Signup</span>
         </div>
 
-        <div className="icon-container">
-          <Link to="#" className="header-link">
-            <SunDim size={20} />
-          </Link>
+        <div className="icon-container" onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? (
+            <>
+                <Link to="#" className="header-link">
+                <SunDim size={20} />
+                </Link>
+                <span className="icon-label">Light Mode</span>
+            </>
+          ) : (
+            <>
+                <Link to="#" className="header-link">
+                <SunMoon size={20} />
+                </Link>
+                <span className="icon-label">Dark Mode</span>
+            </>
+          )}
         </div>
       </nav>
     </header>

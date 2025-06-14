@@ -2,12 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root {
+  /* Light Mode Colors */
   --soft-neutral-gray: #e4e4ea;
   --bright-off-white: #fafafa;
   --light-stone: #c4c6cc;
   --cool-gray: #d8d9de;
   --shadow-element: #b4b6ba;
   --near-white: #f2f2f4;
+
+  /* Dark Mode Colors */
+  --bg-dark: #0C0F1A;
+  --bg-card: #131726;
+  --bg-glass: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(255, 255, 255, 0.15);
+  --text-primary: #FFFFFF;
+  --text-muted: #A9B0C1;
+  --accent: #FFD464;
+  --shadow-dark: rgba(0, 0, 0, 0.6);
+  --highlight-light: rgba(255, 255, 255, 0.08);
 
    --font-family: 'Poppins', sans-serif;
 
@@ -44,6 +56,11 @@ body {
   color: var(--color-text-primary);
   box-sizing: border-box;
   margin: 0;
+}
+
+body.dark-mode {
+  background: linear-gradient(145deg, #0C0F1A, #0F1320);
+  color: var(--text-primary);
 }
 
 h1 {

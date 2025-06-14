@@ -2,12 +2,22 @@
   height: 100vh;
   padding: 15px 50px;
   border-radius: 5px;
-    border-radius: 30px;
-  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  background: rgba(255, 255, 255, 0.15); 
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow:
     8px 8px 20px rgba(0, 0, 0, 0.05),
     -8px -8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .main-container {
+  height: 100vh;
+  padding: 15px 50px;
+  border-radius: 5px;
+  background: rgb(12, 15, 26, 0.7); 
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.25),
+    -8px -8px 20px rgba(255, 255, 255, 0.05);
 }

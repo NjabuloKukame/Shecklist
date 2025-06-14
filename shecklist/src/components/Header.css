@@ -94,3 +94,47 @@
   transform: translateY(0);
 }
 
+/* Dark Mode Styles */
+.dark-mode .header-nav {
+  background: rgba(12, 15, 26, 0.3); 
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+  6px 6px 12px rgba(0, 0, 0, 0.25),
+    -6px -6px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .header-nav:hover {
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.07),
+    6px 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.dark-mode .header-link {
+  background: rgba(30, 35, 50, 0.8);
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.03);
+}
+
+.dark-mode .header-link:hover {
+  box-shadow:
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .header-link svg {
+  color: #e3e6f0;
+}
+
+.dark-mode .header-link:hover svg {
+  color: var(--accent-color); /* Customize this variable as your dark mode highlight */
+}
+
+.dark-mode .icon-label {
+  background: rgba(20, 25, 35, 0.5);
+  color: #e2e5f2;
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.03);
+}
+
