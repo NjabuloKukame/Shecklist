@@ -1,5 +1,5 @@
 .main-container{
-  height: 100vh;
+  height: 100%;
   padding: 15px 50px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.15); 
@@ -20,4 +20,65 @@
   box-shadow:
     8px 8px 20px rgba(0, 0, 0, 0.25),
     -8px -8px 20px rgba(255, 255, 255, 0.05);
+}
+
+.content{
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1{
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.dark-mode .intro-text{
+  color: var(--near-white);
+}
+
+.latest-reviews{
+  margin-top: 20px;
+}
+
+.latest-reviews h2{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.latest-reviews-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 75px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+   .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .content h1{
+    font-weight: 500;
+    font-size: 1.8rem;
+   }
+   
+   .intro-text{
+    font-size: 0.8rem;
+   }
+
+   .latest-reviews-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .latest-reviews h2{
+    font-size: 1.3rem;
+  }
+  
 }

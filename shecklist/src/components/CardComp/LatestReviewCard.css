@@ -1,0 +1,115 @@
+.latest-review-card {
+  height: 310px;
+  width: 290px;
+  background-color: rgba(255, 255, 255, 0.427);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s;
+}
+
+.latest-review-card:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.27);
+}
+
+.latest-review-card-album-thumbnail-container {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.latest-review-card-album-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+.latest-review-card-text-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.latest-review-card-text-container h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Dark Mode */
+.dark-mode .latest-review-card {
+  background-color: rgba(19, 23, 38, 0.85); /* matches --bg-card */
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  color: var(--text-primary);
+}
+
+.dark-mode .latest-review-card:hover {
+  background-color: rgba(19, 23, 38, 0.97);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.38);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dark-mode .latest-review-card-album-thumbnail {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.18);
+  background: var(--bg-glass);
+}
+
+@media (max-width: 800px) {
+  .latest-review-card {
+    width: 230px;
+    height: 240px;
+  }
+
+  .latest-review-card-album-thumbnail-container {
+    height: 150px;
+    padding: 5px;
+  }
+
+  .latest-review-card-text-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .latest-review-card-text-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .latest-review-card {
+    width: 160px;
+    height: 180px;
+  }
+
+  .latest-review-card-album-thumbnail-container {
+    height: 100px;
+    padding: 5px;
+  }
+  
+  .latest-review-card-text-container h3 {
+    font-size: 1.1rem;
+  }
+
+  .latest-review-card-text-container p {
+    font-size: 0.8rem;
+  }
+}

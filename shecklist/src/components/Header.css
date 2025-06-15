@@ -177,13 +177,22 @@
     left: 50%;
     transform: translateX(-50%);
     flex-direction: row;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255);
     border-radius: 18px;
     padding: 10px 15px;
     gap: 14px;
     backdrop-filter: blur(14px);
     opacity: 0;
     pointer-events: none;
+    z-index: 5;
+  }
+
+  .dark-mode .header-nav {
+    background: rgba(12, 15, 26, 1.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      6px 6px 12px rgba(0, 0, 0, 0.3),
+      -6px -6px 12px rgba(255, 255, 255, 0.05);
   }
 
   .header-nav.show-mobile-nav {

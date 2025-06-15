@@ -60,7 +60,7 @@ body {
 
 body.dark-mode {
   background: linear-gradient(145deg, #0C0F1A, #0F1320);
-  color: var(--text-primary);
+  color: var(--text-muted);
 }
 
 h1 {
