@@ -122,7 +122,7 @@
   text-align: center;
 }
 
-.highest-rated-album-text h4 {
+.highest-rated-album-text h4, .featured-artists-entry h4 {
   font-weight: 600;
   font-size: 1rem;
 }
@@ -142,7 +142,7 @@
   border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.highest-rated-album-genre-container p {
+.highest-rated-album-genre-container p, .featured-artists-entry p {
   font-weight: 400;
   font-size: 0.95rem;
 }
