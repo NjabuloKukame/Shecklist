@@ -56,10 +56,11 @@ body {
   color: var(--color-text-primary);
   box-sizing: border-box;
   margin: 0;
+  padding: 10px;
 }
 
 body.dark-mode {
-  background: linear-gradient(145deg, #0C0F1A, #0F1320);
+  background: linear-gradient(145deg, #06080f, #0b0e16);
   color: var(--text-muted);
 }
 

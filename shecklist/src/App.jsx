@@ -44,6 +44,70 @@ function App() {
 
           </div>
         </div>
+
+        <div className="highest-rated-container">
+          <div className="highest-rated-album-container">
+            <h3>HIGHEST RATED ALBUM</h3>
+            <div className='highest-rated-album'>
+
+              <div className="highest-rated-album-entry">
+                <img src="https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/master/pass/3a0607ec.jpg" alt="" className="highest-rated-album-thumbnail" />
+                <div className="highest-rated-album-text">
+                  <h4 className="highest-rated-album-title">GO:OD AM</h4>
+                  <p className="highest-rated-album-artist">Mac Miler</p>
+                </div>
+                <div className="highest-rated-album-genre-container">
+                  <p className="highest-rated-album-genre">Hip-Hop</p>
+                </div>
+              </div>
+              <div className="highest-rated-album-entry">
+                <img src="https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/master/pass/3a0607ec.jpg" alt="" className="highest-rated-album-thumbnail" />
+                <div className="highest-rated-album-text">
+                  <h4 className="highest-rated-album-title">GO:OD AM</h4>
+                  <p className="highest-rated-album-artist">Mac Miler</p>
+                </div>
+                <div className="highest-rated-album-genre-container">
+                  <p className="highest-rated-album-genre">Hip-Hop</p>
+                </div>
+              </div>
+              <div className="highest-rated-album-entry">
+                <img src="https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/master/pass/3a0607ec.jpg" alt="" className="highest-rated-album-thumbnail" />
+                <div className="highest-rated-album-text">
+                  <h4 className="highest-rated-album-title">GO:OD AM</h4>
+                  <p className="highest-rated-album-artist">Mac Miler</p>
+                </div>
+                <div className="highest-rated-album-genre-container">
+                  <p className="highest-rated-album-genre">Hip-Hop</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="featured-artists-container">
+            <h3>FEATURED ARTISTS</h3>
+            <div className='featured-artists'>
+
+              <div className="featured-artists-entry">
+                <img src="https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/master/pass/3a0607ec.jpg" alt="" className="featured-artists-thumbnail" /> 
+                <h4 className="featured-artists-name">Mac Miler</h4>
+                <p className="featured-artists-genre">Hip-Hop</p>               
+              </div>
+              <div className="featured-artists-entry">
+                <img src="https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/master/pass/3a0607ec.jpg" alt="" className="featured-artists-thumbnail" /> 
+                <h4 className="featured-artists-name">Mac Miler</h4>
+                <p className="featured-artists-genre">Hip-Hop</p>               
+              </div>
+              <div className="featured-artists-entry">
+                <img src="https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/master/pass/3a0607ec.jpg" alt="" className="featured-artists-thumbnail" /> 
+                <h4 className="featured-artists-name">Mac Miler</h4>
+                <p className="featured-artists-genre">Hip-Hop</p>               
+              </div>
+
+            </div>
+              
+          </div>
+        </div>
       </div>
 
     </div>
