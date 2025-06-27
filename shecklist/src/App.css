@@ -1,4 +1,4 @@
-.main-container {
+.main-container, .login-container {
   height: 100%;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.15);
@@ -9,7 +9,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.dark-mode .main-container {
+.dark-mode .main-container, .dark-mode .login-container {
   height: 100%;
   background: rgba(10, 12, 20, 0.4); /* deeper, bluer tint */
   backdrop-filter: blur(30px);

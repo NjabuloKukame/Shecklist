@@ -22,7 +22,7 @@ function Header() {
       <nav className={`header-nav ${mobileNavOpen ? "show-mobile-nav" : ""}`}>
         
         <div className="icon-container">
-          <Link to="/search" className="header-link">
+          <Link to="/" className="header-link">
             <House size={20} />
           </Link>
           <span className="icon-label">Home</span>
