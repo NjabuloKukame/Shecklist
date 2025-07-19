@@ -1,6 +1,7 @@
 .main-container, 
 .login-container,
-.review-container {
+.review-container,
+.reviews-page-container {
   height: 100%;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.15);
@@ -13,7 +14,8 @@
 
 .dark-mode .main-container, 
 .dark-mode .login-container,
-.dark-mode .review-container {
+.dark-mode .review-container,
+.dark-mode .reviews-page-container {
   height: 100%;
   background: rgba(10, 12, 20, 0.4); /* deeper, bluer tint */
   backdrop-filter: blur(30px);
@@ -140,7 +142,7 @@
 .featured-artists-thumbnail {
   width: 50px;
   height: 50px;
-  object-fit: cover;
+  object-fit: fit;
   border-radius: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-left: 1px solid rgba(255, 255, 255, 0.15);
@@ -185,7 +187,10 @@
 
   .highest-rated-album,
   .featured-artists {
-    width: 400px;
+    min-width: 0;
+    width: 100%;
+    max-width: 480px;
+    /* margin: 0 auto; */
   }
 
   .highest-rated-album-text h4 {
@@ -206,5 +211,12 @@
 
   .featured-artists-entry p {
     font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .highest-rated-album,
+  .featured-artists {
+    width: 330px;
   }
 }

@@ -1,12 +1,12 @@
 import "./ReviewsCard.css";
 
-function ReviewsCard() {
+function ReviewsCard({ onClick }) {
   return (
     <>
-      <div className="reviews-card">
+      <div className="reviews-card" onClick={onClick}>
         <img
           src="https://media.pitchfork.com/photos/5ed56eb59bcc962f72cc0b57/1:1/w_800,h_800,c_limit/Alfredo_Freddie%20Gibbs%20and%20The%20Alchemist.jpg"
-          alt="Utopia cover"
+          alt="Album Cover Image"
           className="cover-img"
         />
         <div className="reviews-card-text-content">

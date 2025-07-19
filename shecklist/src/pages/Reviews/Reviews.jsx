@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Funnel, SlidersHorizontal } from "lucide-react";
 import Header from "../../components/Header";
 import ReviewsCard from '../../components/CardComp/ReviewsCardComp/ReviewsCard';
@@ -9,6 +10,11 @@ function Reviews(){
     const [filterOpen, setFilterOpen] = useState(false);
     const [sortBy, setSortBy] = useState("Newest");
     const [filter, setFilter] = useState("All");
+    const navigate = useNavigate();
+
+    function onClickNav(){
+        navigate('/review-page');
+    }
     return(
         <>
             <div className="review-container">
@@ -56,7 +62,7 @@ function Reviews(){
                     </div>
 
                     <div className="reviews-body-content">
-                        <ReviewsCard/>
+                        <ReviewsCard  onClick={onClickNav}/>
                     </div>
                 </div>
             </div>
