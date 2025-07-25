@@ -75,9 +75,11 @@
 
 
 
-.dark-mode .reviews-page-top-section h2{
+.dark-mode .reviews-page-top-section h2, 
+.dark-mode .reviews-page-review-author{
     color: var(--near-white);
 }
+
 
 @media (max-width: 1100px) {
   .reviews-page-top-section {

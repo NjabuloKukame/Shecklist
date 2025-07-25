@@ -1,0 +1,25 @@
+.new-album-form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.right-side, .left-side {
+    width: 45%;
+}
+
+.form-group input, .form-group textarea {
+  padding: 5px 5px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border-radius: 8px;
+  border: solid 1px #8d8d8d;
+  letter-spacing: 1px;
+  width: 100%;
+}

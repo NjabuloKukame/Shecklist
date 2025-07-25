@@ -7,6 +7,7 @@ import App from "./App.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Reviews from "./pages/Reviews/Reviews.jsx";
 import ReviewsPage from "./pages/Reviews/ReviewsPage/ReviewsPage.jsx";
+import Admin from "./pages/Admin/Admin.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/login" element={<Login />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/review-page" element={<ReviewsPage />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </DarkModeProvider>

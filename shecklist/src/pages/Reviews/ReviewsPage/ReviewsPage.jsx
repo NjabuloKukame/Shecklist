@@ -23,6 +23,9 @@ function ReviewsPage(){
                 <p className="reviews-page-release-date">
                   Released: May 29, 2020
                 </p>
+                <p className="reviews-page-review-author">
+                  Author: Sheck
+                </p>
                 <p className="reviews-page-genre-tags">
                   <span className="genre-tag">Hip-Hop</span>
                   <span className="genre-tag">R&B</span>

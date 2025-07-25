@@ -1,0 +1,123 @@
+.admin-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 83vh;
+  height: 100%;
+  padding: 20px;
+}
+
+.admin-dashboard{
+    display: flex;
+    gap: 10px;
+    min-height: 77vh;
+    height: 100%;
+    border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-top: 3px solid rgba(255, 255, 255, 0.22);
+  border-left: 3px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 1px 8px rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .admin-dashboard {
+  background: rgba(19, 23, 38, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
+}
+
+.admin-dashboard-sidebar, .admin-dashboard-preview-section {
+  max-width: 250px;
+  width: 100%;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.admin-sidebar-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.admin-sidebar-item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.admin-sidebar-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.admin-dashboard-forms {
+  flex: 1;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+
+.dark-mode .admin-dashboard-sidebar, .dark-mode .admin-dashboard-preview-section {
+  background: rgba(19, 23, 38, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .admin-sidebar-item {
+  color: #fff;
+}
+
+.dark-mode .admin-sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .admin-dashboard-forms {
+  background: rgba(19, 23, 38, 0.35);
+  color: #fff;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.admin-dashboard-forms button {
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 20px;
+  color: var(--bg-dark);
+  border: 1px solid #8d8d8d;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-dashboard-forms button:hover {
+  background-color: var(--bg-dark);
+  color: var(--near-white);
+}
+
+.album-preview p{
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.album-preview img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
